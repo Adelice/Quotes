@@ -8,7 +8,7 @@
      
       <div class="form-group">
 
-          <label id="quote" for="quot">Quote</label>
+          <label id="quote" for="quot">Quote:</label>
           <textarea class="form-control" id="quot" rows="10" required placeholder="Enter your quote here" [(ngModel)]="newQuote.quot" name="quot" #quot="ngModel" required></textarea>
           <div [hidden]="quot.valid || quot.pristine" class="alert alert-danger">
 
