@@ -11,6 +11,11 @@ export class QuoteComponent implements OnInit {
     new Quote('"Be who you are and say what you feel because those who mind dont matter and those who matter dont mind."','Bernard M. Baruch',0,0 ),
     new Quote('“A room without books is like a body without a soul."','Marcus Tullius Cicero',0,0)
   ]
+  addNewQuote(quote){
+    let quoteLength= this.quotes.length;
+    quote.name=
+    quote.description=
+  }
   checkDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
