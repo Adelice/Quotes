@@ -18,6 +18,7 @@ vote(){
 }
 voted(){
   this.quote.downvote++;
+  alert("thank you for your voting")
 }
 
   constructor() { }
