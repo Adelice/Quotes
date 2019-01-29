@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Quote} from '../quote'
+import { globalAgent } from 'https';
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -7,14 +8,17 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes=[
-    new Quote( '"Be yourself; everyone else is already taken"','Oscar wilde',0,0),
-    new Quote('"Be who you are and say what you feel because those who mind dont matter and those who matter dont mind."','Bernard M. Baruch',0,0 ),
-    new Quote('“A room without books is like a body without a soul."','Marcus Tullius Cicero',0,0)
+    new Quote(1, '"Be yourself; everyone else is already taken"','Oscar wilde',0,0),
+    new Quote(2,'"Be who you are and say what you feel because those who mind dont matter and those who matter dont mind."','Bernard M. Baruch',0,0 ),
+    new Quote(3,'“A room without books is like a body without a soul."','Marcus Tullius Cicero',0,0)
   ]
   addNewQuote(quote){
-    let quoteLength= this.quotes.length;
-    quote.name=
-    quote.description=
+    let quoteLength = this.quotes.length;
+    quote.id=quoteLength+1;
+   
+    this.quotes.push(quote)
+
+ 
   }
   checkDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
