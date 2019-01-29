@@ -14,7 +14,7 @@ quoteDeleted(complete:boolean){
 }
 vote(){
   this.quote.upvote++;
-  alert("thank you for your voting")
+  alert("Thank you for your voting")
 }
 voted(){
   this.quote.downvote++;
