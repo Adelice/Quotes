@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Quote} from '../quote'
-import { globalAgent } from 'https';
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',

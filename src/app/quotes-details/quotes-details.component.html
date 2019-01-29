@@ -2,4 +2,11 @@
   {{quote.description}}
   <button type="submit" class="btn btn-success btn-lg" (click) = 'quoteDeleted(true)'>Delete</button>
 </p>
-
+<p>
+  {{quote.upvote}}
+  <button (click)='vote(true)' class="btn btn-primary">UpVote <i class="fa fa-thumbs-o-up"></i></button>
+</p>
+<p>
+  {{quote.downvote}}
+  <button (click)='voted(true)' class="btn btn-danger">DownVote <i class="fa fa-thumbs-down"></i></button> 
+</p>
