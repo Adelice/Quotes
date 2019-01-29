@@ -7,7 +7,7 @@
      <div class ="q1">
         <h3>{{quote.quot}}</h3>
     </div>
-        <button type="submit" class="btn btn-success btn-lg" (click)='checkDetails(i)'> Check more</button>
+        <button  id="but" type="submit" class="btn btn-success btn-lg" (click)='checkDetails(i)'> Check more</button>
         <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quotes-details>
     </div>
 
