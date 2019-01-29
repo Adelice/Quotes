@@ -26,7 +26,7 @@ export class QuoteComponent implements OnInit {
   completeQuote(isComplete,index){
     if (isComplete){
         this.quotes.splice(index,1);
-        alert("you deleted a quote")
+        alert("you deleted a quote");
         }
       }
   constructor() { }
